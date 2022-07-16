@@ -22,7 +22,7 @@
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Calango WEB</strong>
+        {{ new Date().getFullYear() }} — <strong>Grupo OCA</strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -52,7 +52,7 @@ export default {
       },
       {
         text: "mdi-instagram",
-        link: "https://instagram.com/joabson_arley/",
+        link: "",
       },
     ],
   }),

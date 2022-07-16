@@ -10,11 +10,11 @@
       <v-list>
         <v-list-item>
           <v-list-item-avatar>
-            <img src="@/assets/img/logo.png" alt="Logo" />
+            <img src="@/assets/img/logo_grupoOca.png" alt="grupo" />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Calango</v-list-item-title>
-            <v-list-item-subtitle>WEB</v-list-item-subtitle>
+            <v-list-item-title class="title">Grupo OCA</v-list-item-title>
+            <v-list-item-subtitle>Muebles</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -49,7 +49,7 @@
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
-        <v-img src="@/assets/img/logo.png" max-width="50px" />
+        <v-img src="@/assets/img/logo_grupoOca.png" max-width="65px" />
       </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
@@ -59,19 +59,19 @@
       />
       <div v-else>
         <v-btn text @click="$vuetify.goTo('#hero')">
-          <span class="mr-2">Home</span>
+          <span class="mr-2">Inicio</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#features')">
-          <span class="mr-2">Sobre</span>
+          <span class="mr-2">Empresa</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2">Download</span>
+          <span class="mr-2">Galeria</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Preços</span>
+          <span class="mr-2">Proyectos</span>
         </v-btn>
         <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">Contate-nos</span>
+          <span class="mr-2">Contacto</span>
         </v-btn>
       </div>
     </v-app-bar>
@@ -95,11 +95,11 @@ export default {
     drawer: null,
     isXs: false,
     items: [
-      ["mdi-home-outline", "Home", "#hero"],
-      ["mdi-information-outline", "Sobre", "#features"],
-      ["mdi-download-box-outline", "Download", "#download"],
-      ["mdi-currency-usd", "Preços", "#pricing"],
-      ["mdi-email-outline", "Contatos", "#contact"],
+      ["mdi-home-outline", "Inicio", "#hero"],
+      ["mdi-information-outline", "Empresa", "#features"],
+      ["mdi-download-box-outline", "Galeria", "#download"],
+      ["mdi-currency-usd", "Proyectos", "#pricing"],
+      ["mdi-email-outline", "Contacto", "#contact"],
     ],
   }),
   props: {

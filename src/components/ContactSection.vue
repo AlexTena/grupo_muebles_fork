@@ -5,7 +5,7 @@
         <v-col cols="10">
           <v-row justify="center">
             <v-col cols="12" sm="5">
-              <h1 class="font-weight-light display-1">Contate-nos</h1>
+              <h1 class="font-weight-light display-1">Contacto</h1>
               <h3 class="font-weight-light mt-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                 explicabo commodi quisquam asperiores dolore ad enim provident
@@ -15,43 +15,52 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing.
               </h3>
               <h3 class="font-weight-light mt-3">
-                Telefone: +xx (xx) xxxxx-xxxx
+                Telefono: +xx (xx) xxxxx-xxxx
               </h3>
-              <h3 class="font-weight-light">
-                Email: email@email.com
-              </h3>
+              <h3 class="font-weight-light">Email: email@email.com</h3>
+              <div class="text-start mt-5">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.0582623864944!2d-103.45293767532758!3d20.66299644292079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428a954a1dc168b%3A0x7ba8c77c2ee7e18!2sP.%C2%BA%20de%20Las%20Lomas%20B13%2C%20Lomas%20del%20Colli%2C%2045010%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1654738927082!5m2!1ses-419!2smx"
+                  width="60%"
+                  height="40%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </v-col>
             <v-col cols="12" sm="7">
               <v-form ref="form" v-model="valid" :lazy-validation="lazy">
                 <v-text-field
-                    v-model="name"
-                    :rules="nameRules"
-                    label="Nome"
-                    required
+                  v-model="name"
+                  :rules="nameRules"
+                  label="Nombre"
+                  required
                 ></v-text-field>
 
                 <v-text-field
-                    v-model="email"
-                    :rules="emailRules"
-                    label="E-mail"
-                    required
+                  v-model="email"
+                  :rules="emailRules"
+                  label="E-mail"
+                  required
                 ></v-text-field>
 
                 <v-textarea
-                    v-model="textArea"
-                    :rules="textAreaRules"
-                    label="Mensagem"
-                    required
+                  v-model="textArea"
+                  :rules="textAreaRules"
+                  label="Comentarios"
+                  required
                 />
 
                 <v-btn
-                    :disabled="!valid"
-                    color="primary"
-                    :dark="valid"
-                    rounded
-                    block
-                    class="mt-3"
-                    @click="submit"
+                  :disabled="!valid"
+                  color="primary"
+                  :dark="valid"
+                  rounded
+                  block
+                  class="mt-3"
+                  @click="submit"
                 >
                   Enviar
                 </v-btn>
@@ -62,24 +71,20 @@
       </v-row>
     </v-container>
     <div class="svg-border-waves text-white">
-      <v-img src="~@/assets/img/borderWavesBlue.svg"/>
+      <v-img src="~@/assets/img/borderWavesBlue.svg" />
     </div>
     <v-snackbar
-        v-model="snackbar.enabled"
-        timeout="3000"
-        right
-        top
-        :color="snackbar.color"
+      v-model="snackbar.enabled"
+      timeout="3000"
+      right
+      top
+      :color="snackbar.color"
     >
       {{ snackbar.text }}
 
       <template v-slot:action="{ attrs }">
-        <v-btn
-            text
-            v-bind="attrs"
-            @click="snackbar.enabled = false"
-        >
-          Fechar
+        <v-btn text v-bind="attrs" @click="snackbar.enabled = false">
+          Fecha
         </v-btn>
       </template>
     </v-snackbar>
@@ -99,7 +104,6 @@
   width: 100%;
   overflow: hidden;
 }
-
 </style>
 
 <script>
@@ -111,25 +115,25 @@ export default {
     valid: true,
     name: "",
     nameRules: [
-      (v) => !!v || "O campo nome é obrigatório",
-      (v) => (v && v.length >= 6) || "O nome precisa ter mais de 6 caracteres",
+      (v) => !!v || "El campo de nombre es obligatorio",
+      (v) => (v && v.length >= 6) || "El nombre debe tener más de 6 caracteres",
     ],
     email: "",
     emailRules: [
-      (v) => !!v || "O campo email é obrigatório",
-      (v) => /.+@.+\..+/.test(v) || "O E-mail precisa ser válido",
+      (v) => !!v || "El campo de email es obligatorio",
+      (v) => /.+@.+\..+/.test(v) || "Debe ser un email valido",
     ],
     textArea: "",
     textAreaRules: [
-      (v) => !!v || "O campo de texto é obrigatório",
-      (v) => (v && v.length >= 10) || "Mínimo de 10 caracteres",
+      (v) => !!v || "El campo de comentarios es obligatorio",
+      (v) => (v && v.length >= 10) || "Minimo 10 caracteres",
     ],
     lazy: false,
     snackbar: {
       enabled: false,
-      text: '',
-      color: ''
-    }
+      text: "",
+      color: "",
+    },
   }),
   methods: {
     submit() {
@@ -146,7 +150,7 @@ export default {
         this.snackbar.color = "danger"
         this.snackbar.enabled = true
       })*/
-    }
-  }
+    },
+  },
 };
 </script>

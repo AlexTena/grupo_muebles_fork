@@ -15,7 +15,7 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/paperplane.svg"></v-img>
+                          <v-img src="~@/assets/img/foods.svg"></v-img>
                         </div>
                       </div>
                     </div>
@@ -24,15 +24,15 @@
                     </div>
                     <v-divider class="my-2" />
                     <div class="text-uppercase blue--text">
-                      Aperiam adipisci perspiciatis
+                     Asegure la mayor calidad
                     </div>
-                    <v-divider class="my-2" />
+                    
                     <div class="text-uppercase blue--text">
-                      Lorem ipsum dolor, sit amet
+                       en su operación 
                     </div>
-                    <v-divider class="my-2" />
+                    
                     <div class="text-uppercase blue--text">
-                      Incidunt reprehenderit quaerat
+                       y evite mermas.
                     </div>
                     <v-divider class="my-2" />
                     <div class="text-uppercase text-h4 mt-6 blue--text">
@@ -99,21 +99,7 @@
                               </v-row>
                             </v-sheet>
                           </v-carousel-item>
-                          <v-carousel-item>
-                            <v-sheet height="100%" tile>
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <img
-                                  src="../assets/img/render4.jpeg"
-                                  width="100%"
-                                  alt="image"
-                                />
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
+                          
                         </v-carousel>
                       </v-card>
                     </v-dialog>
@@ -135,7 +121,7 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/airplane.svg" />
+                          <v-img src="~@/assets/img/stall.svg" />
                         </div>
                       </div>
                     </div>
@@ -144,15 +130,15 @@
                     </div>
                     <v-divider class="my-2" />
                     <div class="text-uppercase blue--text">
-                      Amet consectetur adipisicing elit.
+                      Seleccione el mejor vehículo
                     </div>
-                    <v-divider class="my-2" />
+                    
                     <div class="text-uppercase blue--text">
-                      Lorem ipsum dolor sit
+                     para promover sus
                     </div>
-                    <v-divider class="my-2" />
+                    
                     <div class="text-uppercase blue--text">
-                      Eligendi cupiditate esse suscipit
+                      productos y servicios.
                     </div>
                     <v-divider class="my-2" />
                     <div class="text-uppercase text-h4 mt-6 blue--text">
@@ -174,51 +160,8 @@
 
                       <v-card>
                         <v-carousel v-model="model">
-                          <v-carousel-item>
-                            <v-sheet height="100%" tile>
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <img
-                                  src="../assets/img/render1.jpeg"
-                                  width="100%"
-                                  alt="image"
-                                />
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
-                          <v-carousel-item>
-                            <v-sheet height="100%" tile>
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <img
-                                  src="../assets/img/render2.jpeg"
-                                  width="100%"
-                                  alt="image"
-                                />
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
-                          <v-carousel-item>
-                            <v-sheet height="100%" tile>
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <img
-                                  src="../assets/img/render3.jpeg"
-                                  width="100%"
-                                  alt="image"
-                                />
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
+                          
+                          
                           <v-carousel-item>
                             <v-sheet height="100%" tile>
                               <v-row
@@ -234,6 +177,22 @@
                               </v-row>
                             </v-sheet>
                           </v-carousel-item>
+                          <v-carousel-item>
+                            <v-sheet height="100%" tile>
+                              <v-row
+                                class="fill-height"
+                                align="center"
+                                justify="center"
+                              >
+                                <img
+                                  src="../assets/img/render5.jpeg"
+                                  width="100%"
+                                  alt="image"
+                                />
+                              </v-row>
+                            </v-sheet>
+                          </v-carousel-item>
+                          
                         </v-carousel>
                       </v-card>
                     </v-dialog>
@@ -260,7 +219,7 @@
                     <div class="flex-center">
                       <div class="circle1">
                         <div class="circle2">
-                          <v-img src="~@/assets/img/aeroplane.svg" />
+                          <v-img src="~@/assets/img/flash.svg" />
                         </div>
                       </div>
                     </div>
@@ -269,15 +228,15 @@
                     </div>
                     <v-divider class="my-2" />
                     <div class="text-uppercase blue--text">
-                      Lorem ipsum dolor sit
+                      Diseñe su espacio comercial  
                     </div>
-                    <v-divider class="my-2" />
+                    
                     <div class="text-uppercase blue--text">
-                      Amet consectetur adipisicing elit.
+                      con el apoyo de nuestros
                     </div>
-                    <v-divider class="my-2" />
+                    
                     <div class="text-uppercase blue--text">
-                      Eligendi cupiditate esse suscipit
+                      asesores profesionales.
                     </div>
                     <v-divider class="my-2" />
                     <div class="text-uppercase text-h4 mt-6 blue--text">
@@ -329,21 +288,7 @@
                               </v-row>
                             </v-sheet>
                           </v-carousel-item>
-                          <v-carousel-item>
-                            <v-sheet height="100%" tile>
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <img
-                                  src="../assets/img/render3.jpeg"
-                                  width="100%"
-                                  alt="image"
-                                />
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
+                          
                           <v-carousel-item>
                             <v-sheet height="100%" tile>
                               <v-row

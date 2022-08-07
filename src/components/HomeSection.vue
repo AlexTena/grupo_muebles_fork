@@ -5,16 +5,21 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <!-- 
-                <v-img src="@/assets/img/logoGrupo.jpeg" width="60%" />
-               -->
-
-              <h1 class="display-2 font-weight-bold mb-4">Grupo OCA</h1>
+              <!--
+                   <v-img src="@/assets/img/logoGrupo.jpeg" width="75%" />
+              -->
+               
+               
+              
+                  <h1 class="display-2 font-weight-bold mb-4">Grupo OCA</h1>
               <h1 class="font-weight-light">
-                Lorem ipsum dolor sit amet consectetur <br />
-                adipisicing elit. Maiores porro voluptatibus <br />
-                delectus nam optio harum!
+                Muebles, Islas y Exhibidores  <br />
+                 <br />
+                
               </h1>
+
+            
+              
 
               <v-btn
                 rounded
@@ -27,7 +32,9 @@
                 Saber más
                 <v-icon class="ml-2">mdi-arrow-down</v-icon>
               </v-btn>
-              <div class="video d-flex align-center py-4">
+
+              <!--
+                  <div class="video d-flex align-center py-4">
                 <a @click.stop="dialog = true" class="playBut">
                   <svg
                     version="1.1"
@@ -69,6 +76,9 @@
                 </a>
                 <p class="subheading ml-2 mb-0">Ver video</p>
               </div>
+
+              -->
+              
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
           </v-row>
@@ -108,7 +118,7 @@
                     class="d-block ml-auto mr-auto"
                     :class="{ 'zoom-efect': hover }"
                   ></v-img>
-                  <h1 class="font-weight-regular">{{ feature.title }}</h1>
+                  <h1 class="font-weight-regular mt-1">{{ feature.title }}</h1>
                   <h4 class="font-weight-regular subtitle-1">
                     {{ feature.text }}
                   </h4>
@@ -142,20 +152,21 @@ export default {
       videoId: "-T3LcxYNUMM", //https://youtu.be/-T3LcxYNUMM
       features: [
         {
-          img: require("@/assets/img/icon2.png"),
-          title: "Lorem ipsum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          img: require("@/assets/img/excellenceG.svg"),
+          title: "Enfoque Integral",
+          text: "Proporcionamos a nuestros clientes la mejor opción en exhibición y optimización de espacios comerciales",
         },
         {
-          img: require("@/assets/img/icon1.png"),
-          title: "Lorem ipsum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          img: require("@/assets/img/des.svg"),
+          title: "Excelencia en Diseño",
+          text: "Diseñamos y fabricamos productos de la más alta calidad",
         },
         {
-          img: require("@/assets/img/icon3.png"),
-          title: "Lorem ipsum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          img: require("@/assets/img/coinG.svg"),
+          title: "Inversión Accesible",
+          text: "Garantizamos los mejores precios en islas y exhibidores",
         },
+        
       ],
     };
   },

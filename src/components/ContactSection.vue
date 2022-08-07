@@ -7,22 +7,20 @@
             <v-col cols="12" sm="5">
               <h1 class="font-weight-light display-1">Contacto</h1>
               <h3 class="font-weight-light mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                explicabo commodi quisquam asperiores dolore ad enim provident
-                veniam perferendis voluptate, perspiciatis.
+               
               </h3>
               <h3 class="font-weight-light mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
+                Ponte en contacto con nosotros.
               </h3>
               <h3 class="font-weight-light mt-3">
-                Telefono: +xx (xx) xxxxx-xxxx
+                Telefono: 33 2696 1293
               </h3>
-              <h3 class="font-weight-light">Email: email@email.com</h3>
-              <div class="text-start mt-5">
+              <h3 class="font-weight-light">Email: karla.becerra@grupoocamuebles.com</h3>
+              <div class="text-start mt-4 ">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.0582623864944!2d-103.45293767532758!3d20.66299644292079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428a954a1dc168b%3A0x7ba8c77c2ee7e18!2sP.%C2%BA%20de%20Las%20Lomas%20B13%2C%20Lomas%20del%20Colli%2C%2045010%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1654738927082!5m2!1ses-419!2smx"
-                  width="60%"
-                  height="40%"
+                  width="90%"
+                  height="100%"
                   style="border: 0"
                   allowfullscreen=""
                   loading="lazy"

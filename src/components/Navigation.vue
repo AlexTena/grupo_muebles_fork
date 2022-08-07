@@ -5,7 +5,7 @@
       app
       temporary
       dark
-      src="@/assets/img/bgDrawer.jpg"
+      src="@/assets/img/025e73_solid_color_background.png"
     >
       <v-list>
         <v-list-item>
@@ -58,15 +58,18 @@
         v-if="isXs"
       />
       <div v-else>
-        <v-btn text @click="$vuetify.goTo('#hero')">
+        <v-btn  text @click="$vuetify.goTo('#hero')">
           <span class="mr-2">Inicio</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#features')">
           <span class="mr-2">Empresa</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#download')">
+        <!--
+          <v-btn text @click="$vuetify.goTo('#download')">
           <span class="mr-2">Galeria</span>
         </v-btn>
+        -->
+        
         <v-btn text @click="$vuetify.goTo('#pricing')">
           <span class="mr-2">Proyectos</span>
         </v-btn>
@@ -97,7 +100,6 @@ export default {
     items: [
       ["mdi-home-outline", "Inicio", "#hero"],
       ["mdi-information-outline", "Empresa", "#features"],
-      ["mdi-download-box-outline", "Galeria", "#download"],
       ["mdi-currency-usd", "Proyectos", "#pricing"],
       ["mdi-email-outline", "Contacto", "#contact"],
     ],

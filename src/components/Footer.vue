@@ -15,8 +15,7 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet.
-        Mauris cursus commodo interdum.
+        
       </v-card-text>
 
       <v-divider></v-divider>
@@ -40,19 +39,17 @@ export default {
     icons: [
       {
         text: "mdi-facebook",
-        link: "",
+        link: "https://www.facebook.com/MUEBLESGRUPOOCA",
       },
+      
       {
-        text: "mdi-twitter",
-        link: "",
+        text: "mdi-whatsapp",
+        link: "https://api.whatsapp.com/send?phone=523321492348",
       },
-      {
-        text: "mdi-linkedin",
-        link: "",
-      },
+     
       {
         text: "mdi-instagram",
-        link: "",
+        link: "https://www.instagram.com/muebles_grupooca/",
       },
     ],
   }),

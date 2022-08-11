@@ -9,113 +9,7 @@
             </h1>
             <v-divider class="my-6"></v-divider>
             <v-row class="text-center">
-              <v-col class="col-12 col-sm-6 col-md-4">
-                <div class="flex-center">
-                  <v-card-text>
-                    <div class="flex-center">
-                      <div class="circle1">
-                        <div class="circle2">
-                          <v-img src="~@/assets/img/foods.svg"></v-img>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text--disabled text-uppercase text-h5 my-2">
-                      Industria Alimentaria
-                    </div>
-                    <v-divider class="my-2" />
-                    <div class="text-uppercase blue--text">
-                     Asegure la mayor calidad
-                    </div>
-                    
-                    <div class="text-uppercase blue--text">
-                       en su operación 
-                    </div>
-                    
-                    <div class="text-uppercase blue--text">
-                       y evite mermas.
-                    </div>
-                    <v-divider class="my-2" />
-                    <div class="text-uppercase text-h4 mt-6 blue--text">
-                      Desde $ -----
-                    </div>
-                    <v-dialog v-model="dialog" width="700">
-                      <template v-slot:activator="{ on }">
-                        <v-btn
-                          rounded
-                          outlined
-                          color="blue"
-                          class="mt-6"
-                          v-bind="size"
-                          v-on="on"
-                        >
-                          Ver Proyectos
-                        </v-btn>
-                      </template>
-
-                      <v-card>
-                        <v-carousel v-model="model">
-                          <v-carousel-item>
-                            <v-sheet height="100%" tile>
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <img
-                                  src="../assets/img/render1.jpeg"
-                                  width="100%"
-                                  alt="image"
-                                />
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
-                          <v-carousel-item>
-                            <v-sheet height="100%" tile>
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <img
-                                  src="../assets/img/render2.jpeg"
-                                  width="100%"
-                                  alt="image"
-                                />
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
-                          <v-carousel-item>
-                            <v-sheet height="100%" tile>
-                              <v-row
-                                class="fill-height"
-                                align="center"
-                                justify="center"
-                              >
-                                <img
-                                  src="../assets/img/render3.jpeg"
-                                  width="100%"
-                                  alt="image"
-                                />
-                              </v-row>
-                            </v-sheet>
-                          </v-carousel-item>
-                          
-                        </v-carousel>
-                      </v-card>
-                    </v-dialog>
-                  </v-card-text>
-                  <v-divider
-                    style="margin-right: -23px"
-                    vertical
-                    v-if="this.$vuetify.breakpoint.smAndUp"
-                  ></v-divider>
-                </div>
-                <v-divider
-                  class="mx-4"
-                  v-if="!this.$vuetify.breakpoint.smAndUp"
-                ></v-divider>
-              </v-col>
-              <v-col class="col-12 col-sm-6 col-md-4">
+              <v-col class="col-12 col-md-6">
                 <div class="flex-center">
                   <v-card-text>
                     <div class="flex-center">
@@ -130,20 +24,18 @@
                     </div>
                     <v-divider class="my-2" />
                     <div class="text-uppercase blue--text">
-                      Seleccione el mejor vehículo
+                      Seleccione las mejores islas y
                     </div>
-                    
+
                     <div class="text-uppercase blue--text">
-                     para promover sus
+                      exhibidores para promover sus
                     </div>
-                    
+
                     <div class="text-uppercase blue--text">
                       productos y servicios.
                     </div>
                     <v-divider class="my-2" />
-                    <div class="text-uppercase text-h4 mt-6 blue--text">
-                      Desde $ -----
-                    </div>
+                    <div class="text-uppercase text-h4 mt-6 blue--text">-</div>
                     <v-dialog v-model="dialog" width="700">
                       <template v-slot:activator="{ on }">
                         <v-btn
@@ -154,14 +46,27 @@
                           v-bind="size"
                           v-on="on"
                         >
-                          Ver Proyectos
+                          Ver Galeria
                         </v-btn>
                       </template>
 
                       <v-card>
                         <v-carousel v-model="model">
-                          
-                          
+                          <v-carousel-item>
+                            <v-sheet height="100%" tile>
+                              <v-row
+                                class="fill-height"
+                                align="center"
+                                justify="center"
+                              >
+                                <img
+                                  src="../assets/img/render6.jpeg"
+                                  width="100%"
+                                  alt="image"
+                                />
+                              </v-row>
+                            </v-sheet>
+                          </v-carousel-item>
                           <v-carousel-item>
                             <v-sheet height="100%" tile>
                               <v-row
@@ -192,7 +97,21 @@
                               </v-row>
                             </v-sheet>
                           </v-carousel-item>
-                          
+                          <v-carousel-item>
+                            <v-sheet height="100%" tile>
+                              <v-row
+                                class="fill-height"
+                                align="center"
+                                justify="center"
+                              >
+                                <img
+                                  src="../assets/img/render3.jpeg"
+                                  width="100%"
+                                  alt="image"
+                                />
+                              </v-row>
+                            </v-sheet>
+                          </v-carousel-item>
                         </v-carousel>
                       </v-card>
                     </v-dialog>
@@ -208,7 +127,7 @@
                   v-if="!this.$vuetify.breakpoint.smAndUp"
                 ></v-divider>
               </v-col>
-              <v-col class="col-12 col-md-4">
+              <v-col class="col-12 col-md-6">
                 <v-divider
                   v-if="this.$vuetify.breakpoint.smOnly"
                   class="mx-4"
@@ -228,20 +147,18 @@
                     </div>
                     <v-divider class="my-2" />
                     <div class="text-uppercase blue--text">
-                      Diseñe su espacio comercial  
+                      Diseñe su espacio comercial
                     </div>
-                    
+
                     <div class="text-uppercase blue--text">
                       con el apoyo de nuestros
                     </div>
-                    
+
                     <div class="text-uppercase blue--text">
                       asesores profesionales.
                     </div>
                     <v-divider class="my-2" />
-                    <div class="text-uppercase text-h4 mt-6 blue--text">
-                      Desde $ -----
-                    </div>
+                    <div class="text-uppercase text-h4 mt-6 blue--text">-</div>
                     <v-dialog v-model="dialog" width="700">
                       <template v-slot:activator="{ on }">
                         <v-btn
@@ -252,7 +169,7 @@
                           v-bind="size"
                           v-on="on"
                         >
-                          Ver Proyectos
+                          Ver Galeria
                         </v-btn>
                       </template>
 
@@ -288,7 +205,7 @@
                               </v-row>
                             </v-sheet>
                           </v-carousel-item>
-                          
+
                           <v-carousel-item>
                             <v-sheet height="100%" tile>
                               <v-row
@@ -316,16 +233,6 @@
       </v-row>
     </v-container>
     <div class="svg-border-rounded text-light">
-      <!-- <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 144.54 17.34"
-        preserveAspectRatio="none"
-        fill="currentColor"
-      >
-        <path
-          d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
-        />
-      </svg> -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"

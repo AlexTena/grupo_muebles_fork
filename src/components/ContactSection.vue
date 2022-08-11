@@ -6,17 +6,15 @@
           <v-row justify="center">
             <v-col cols="12" sm="5">
               <h1 class="font-weight-light display-1">Contacto</h1>
-              <h3 class="font-weight-light mt-3">
-               
-              </h3>
+              <h3 class="font-weight-light mt-3"></h3>
               <h3 class="font-weight-light mt-3">
                 Ponte en contacto con nosotros.
               </h3>
-              <h3 class="font-weight-light mt-3">
-                Telefono: 33 2696 1293
+              <h3 class="font-weight-light mt-3">Telefono: 33 38 52 57 05</h3>
+              <h3 class="font-weight-light">
+                Email: ventas@grupoocamuebles.com
               </h3>
-              <h3 class="font-weight-light">Email: karla.becerra@grupoocamuebles.com</h3>
-              <div class="text-start mt-4 ">
+              <div class="text-start mt-4">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.0582623864944!2d-103.45293767532758!3d20.66299644292079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428a954a1dc168b%3A0x7ba8c77c2ee7e18!2sP.%C2%BA%20de%20Las%20Lomas%20B13%2C%20Lomas%20del%20Colli%2C%2045010%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1654738927082!5m2!1ses-419!2smx"
                   width="90%"
@@ -45,7 +43,7 @@
                 ></v-text-field>
 
                 <v-textarea
-                  v-model="textArea"
+                  v-model="message"
                   :rules="textAreaRules"
                   label="Comentarios"
                   required
@@ -105,7 +103,7 @@
 </style>
 
 <script>
-// import {db} from '@/main'
+import emailjs from "emailjs-com";
 
 export default {
   data: () => ({
@@ -114,14 +112,14 @@ export default {
     name: "",
     nameRules: [
       (v) => !!v || "El campo de nombre es obligatorio",
-      (v) => (v && v.length >= 6) || "El nombre debe tener más de 6 caracteres",
+      (v) => (v && v.length >= 5) || "El nombre debe tener más de 5 caracteres",
     ],
     email: "",
     emailRules: [
       (v) => !!v || "El campo de email es obligatorio",
       (v) => /.+@.+\..+/.test(v) || "Debe ser un email valido",
     ],
-    textArea: "",
+    message: "",
     textAreaRules: [
       (v) => !!v || "El campo de comentarios es obligatorio",
       (v) => (v && v.length >= 10) || "Minimo 10 caracteres",
@@ -135,19 +133,30 @@ export default {
   }),
   methods: {
     submit() {
-      /*db.collection("contactData").add({
-        name: this.name,
-        email: this.email,
-        message: this.textArea
-      }).then(() => {
-        this.snackbar.text = "Mensagem enviada com sucesso"
-        this.snackbar.color = "success"
-        this.snackbar.enabled = true
-      }).catch(() => {
-        this.snackbar.text = "Erro ao enviar mensagem"
-        this.snackbar.color = "danger"
-        this.snackbar.enabled = true
-      })*/
+      try {
+        emailjs.send(
+          "service_1ip58pm",
+          "template_0lbnfvn",
+
+          {
+            name: this.name,
+            email: this.email,
+            message: this.message,
+          },
+          "-xtlfdVG5rrKufZ6A"
+        );
+
+        this.snackbar.text = "Mensaje enviado con éxito";
+        this.snackbar.color = "success";
+        this.snackbar.enabled = true;
+      } catch (error) {
+        console.log(error);
+        this.snackbar.text = "Error al enviar mensaje";
+        this.snackbar.color = "danger";
+        this.snackbar.enabled = true;
+      }
+
+      this.$refs.form.reset();
     },
   },
 };

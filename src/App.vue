@@ -4,11 +4,7 @@
     <v-main class="pt-0">
       <home />
       <about />
-      <!--
-        <gallery />
-      -->
-      
-      <pricing /> 
+      <projects />
       <contact />
     </v-main>
     <v-scale-transition>
@@ -44,8 +40,8 @@ import navigation from "./components/Navigation";
 import foote from "./components/Footer";
 import home from "./components/HomeSection";
 import about from "./components/AboutSection";
-//import gallery from "./components/GallerySection";
-import pricing from "./components/PricingSection";
+
+import projects from "./components/Projects";
 import contact from "./components/ContactSection";
 
 export default {
@@ -56,7 +52,7 @@ export default {
     foote,
     home,
     about,
-    pricing,
+    projects,
     contact,
   },
 

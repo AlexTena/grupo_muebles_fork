@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    
+    <title>Grupo OCA Muebles</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   </head>
@@ -16,4 +16,26 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+
+  <script type="text/javascript">
+    !function(w,h,a,t,s,p){
+        w.whatsapp || (
+        s = h.createElement(a),
+        s.src = t,
+        p = h.getElementsByTagName(a)[0],
+        p.parentNode.insertBefore(s, p)
+    )}(window, document, "script", "https://cdn.jsdelivr.net/gh/miguelcolmenares/whatsapp-widget/dist/js/whatsapp-widget.js");
+    window.addEventListener('load', function(){
+        new whatsapp({
+            agents:[{
+                name: "Servicio al cliente",
+                phone: "52 1 33 2149 2348",
+                hours: "Disponible 9am - 6pm",
+                cta: "Haz clic para iniciar chat",
+                
+              
+            }]
+        })
+    });
+    </script>
 </html>

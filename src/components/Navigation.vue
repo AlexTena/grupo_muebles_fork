@@ -48,9 +48,6 @@
       class="px-15"
       :class="{ expand: flat }"
     >
-      <v-toolbar-title>
-        <v-img src="@/assets/img/logo_grupoOca.png" max-width="65px" />
-      </v-toolbar-title>
       <v-spacer />
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
@@ -58,18 +55,13 @@
         v-if="isXs"
       />
       <div v-else>
-        <v-btn  text @click="$vuetify.goTo('#hero')">
+        <v-btn text @click="$vuetify.goTo('#hero')">
           <span class="mr-2">Inicio</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#features')">
           <span class="mr-2">Empresa</span>
         </v-btn>
-        <!--
-          <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2">Galeria</span>
-        </v-btn>
-        -->
-        
+
         <v-btn text @click="$vuetify.goTo('#pricing')">
           <span class="mr-2">Proyectos</span>
         </v-btn>

@@ -4,17 +4,13 @@
     <v-main class="pt-0">
       <home />
       <about />
-      <!--
-        <gallery />
-      -->
-      
-      <pricing /> 
+      <projects />
       <contact />
     </v-main>
     <v-scale-transition>
       <v-btn
         fab
-        v-show="fab"
+        v-show="false"
         v-scroll="onScroll"
         dark
         fixed
@@ -31,6 +27,8 @@
 </template>
 
 <style scoped>
+h1 {
+}
 .v-main {
   background-image: url("~@/assets/img/bgMain.png");
   background-attachment: fixed;
@@ -44,8 +42,8 @@ import navigation from "./components/Navigation";
 import foote from "./components/Footer";
 import home from "./components/HomeSection";
 import about from "./components/AboutSection";
-//import gallery from "./components/GallerySection";
-import pricing from "./components/PricingSection";
+
+import projects from "./components/Projects";
 import contact from "./components/ContactSection";
 
 export default {
@@ -56,7 +54,7 @@ export default {
     foote,
     home,
     about,
-    pricing,
+    projects,
     contact,
   },
 

@@ -9,7 +9,7 @@
     "dependencies": {
         "core-js": "^3.8.2",
         "deepai": "^1.0.17",
-        "emailjs-com": "^3.2.0",
+        "firebase": "^7.24.0",
         "vue": "^2.6.12",
         "vue-youtube-embed": "^2.2.2",
         "vuetify": "^2.4.2"

@@ -10,9 +10,8 @@
               <h3 class="font-weight-light mt-3">
                 Ponte en contacto con nosotros.
               </h3>
-              <h3 class="font-weight-light mt-3">Telefono: 33 3852 5705</h3>
-              <h3 class="font-weight-light">
-                Email: ventas@grupoocamuebles.com
+              <h3 class="font-weight-light mt-3">
+                Telefono: 33 2696 1293
               </h3>
               <div class="text-start mt-4">
                 <iframe
